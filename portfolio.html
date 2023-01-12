@@ -22,6 +22,57 @@
         <a class="cta" href="#"><button>Contact</button></a>
     </header>
     
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          padding: 25px;
+          background-color: black;
+          color: white;
+          font-size: 25px;
+        transition:1s;  
+        }
+        
+          body.dark-mode .srbutton {
+          background:#60f;
+          box-shadow:0 15px 15px #6600ff25;
+          color:white;
+          }  
+        
+        .srbutton {
+          margin: 10px 0 0;
+          background:#0f9;
+          color:black;  
+          border:none;
+          border-radius:100px;
+          padding:16px 24px;
+          outline:none;
+          font-weight:bold;
+          font-size:24px;
+          }    
+          
+        .dark-mode {
+        transition:1s;
+          background-color: white;
+          color: black;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Toggle Dark Mode</h2>
+        <p>Click the button to toggle between dark and light mode for this page.</p>
+        
+        <button class="srbutton" onclick="myFunction()">Try Me</button>
+        
+        <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+        
+        </body>
 
     <section class="hidden">
     <h1 style="font-size:4em; ">Hi there! I'm Michelle, <br>a retired operating room nurse and </h1><h1 style="font-size:4em; " class="rainbow rainbow_text_animated">aspiring software developer.</h1>
