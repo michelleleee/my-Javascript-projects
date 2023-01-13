@@ -283,6 +283,9 @@ timeline
     .to('.covid1', 6, {y: 10}, '-=4')
     .to('.covid2', 6, {y: 10}, '-=4');
 
+/*this should be active per youtube video https://www.youtube.com/watch?v=Nt70Ld0dJCM
+but it prevents any animation.
+
 let scene = new ScrollMagic.Scene({
     triggerElement: "nextContent",
     duration: "100%",
@@ -291,3 +294,4 @@ let scene = new ScrollMagic.Scene({
     .setTween(timeline)
     .setPin("nextContent")
     .addTo(controller)
+*/
