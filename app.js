@@ -271,3 +271,23 @@ function Gradient(stop1_hex, stop2_hex, num){
 var fractalTree = new FractalTree('canvas');
 
 
+/* Parallax */
+let controller = new ScrollMagic.Controller();
+let timeline = new TimelineMax();
+
+timeline
+    .to('.OR', 4, {y: 50})
+    .to('.nurse', 5, {y: 40}, '-=2')
+    .to('.TB2', 6, {y: 20}, '-=4')
+    .to('.TB1', 6, {y: 20}, '-=3')
+    .to('.covid1', 6, {y: 10}, '-=4')
+    .to('.covid2', 6, {y: 10}, '-=4');
+
+let scene = new ScrollMagic.Scene({
+    triggerElement: "nextContent",
+    duration: "100%",
+    triggerHook: 0,
+})
+    .setTween(timeline)
+    .setPin("nextContent")
+    .addTo(controller)

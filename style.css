@@ -310,3 +310,24 @@ cube {
         }
     }
 
+/*parallax*/
+.container {
+    height: 100vh;
+    max-width: auto;
+}
+.container img {
+    max-width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
+    object-fit: cover;
+}
+.nextContent {
+    width: 100%;
+    min-height: 10vh;
+    z-index: 2;
+}
+
+.faded.faded-top:after {
+    box-shadow: inset 0 40px 40px -16px;
+}
