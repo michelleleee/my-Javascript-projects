@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
 .site-header__wrapper {
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color-scheme: white;
+    padding: 30px;
+    column-gap: 100px;}
+.play {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.resume {
+    color: white;
+    font-family: 'Poppins', sans-serif;}
+.projects {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -73,7 +86,6 @@ body {
 /*aspiring software developer in rainbow*/
 .rainbow {
     text-align: center;
-    text-decoration: underline;
     font-family: 'Poppins', sans-serif;
     margin-top: -5%;
 }
@@ -139,7 +151,7 @@ cube {
     body{
         margin: auto;
         padding:0px;
-        font-family: Poppins, sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-align: center;
     }
 
@@ -148,25 +160,11 @@ cube {
     }
     .mentorshipCube{
         width:100%;
-        align-content: center;
-    }
-    .mentorshipCube:before{
-        content: ' ';
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.9);
-        align-content: center;
-    }
-    .mentorshipCube h3{
         position:relative;
         font-size: 3em;
         text-align: center;
-
         font-weight:700;
-        align-content: center;
+        align-content: center !important;
     }
 
     .stage{
@@ -197,9 +195,6 @@ cube {
         position:absolute;
         width:400px;
         height:80px;
-        text-align:left;
-        color:#109393;
-        font-family:'Raleway', sans-serif;
         font-size:74px;
         font-weight:700;
         }
