@@ -1,40 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+.site-header__wrapper {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    color-scheme: white;
+}
+
 body {
     background-color: #131316;
     color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0;
-    margin-top: 140;
     text-align: center;
 }
 
-header {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
+section { /*main text transitions from the left. Source of multiple spacing problems*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10%;
-    box-shadow: 0 0 25px 0 black;
-}
-header * {
-    display: inline;
-}
-header li {
-    margin: 50px;
-}
-header li a {
-    color: white;
-    text-decoration: none;
-}
-
-section { /*main text transitions from the left*/
-    display: grid;
     place-items: center;
     align-content: center;
     min-height: 10vh;
@@ -159,11 +141,11 @@ cube {
     a:hover,a:active{
         text-decoration:none;
     }
-    .home{
+    .mentorshipCube{
         width:100%;
         align-content: center;
     }
-    .home:before{
+    .mentorshipCube:before{
         content: ' ';
         position: relative;
         left: 0;
@@ -173,11 +155,11 @@ cube {
         background-color: rgba(0,0,0,0.9);
         align-content: center;
     }
-    .home h3{
+    .mentorshipCube h3{
         position:relative;
         font-size: 3em;
         text-align: center;
-        color:#009393;
+
         font-weight:700;
         align-content: center;
     }
