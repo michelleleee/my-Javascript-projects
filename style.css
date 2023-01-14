@@ -15,24 +15,29 @@ body {
     text-align: center;
 }
 
-section { /*main text transitions from the left. Source of multiple spacing problems*/
-    display: flex;
-    place-items: center;
-    align-content: center;
-    min-height: 10vh;
-}
-
+/*main text transitions from the left. Source of multiple spacing problems*/
 .hidden {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 70vh;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.surgery {
+    display: flex;
+    place-items: center;
+    align-content: center;
+    min-height: 70vh;
 }
 
 .logos {
