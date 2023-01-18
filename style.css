@@ -126,9 +126,8 @@ body {
   }
   /* Clear floats after image containers */
   .row::after {
-    content: "";
+    content:"";
     clear: both;
-    display: table;
   }
 .column {
 	padding: 10px;
@@ -143,7 +142,9 @@ body {
     transform: rotate(0);
 }
 
-
+html {
+    width: 100%;
+}
 /*Mentorship rotating cube animation*/
 cube {
     align-content: center;
@@ -160,6 +161,7 @@ cube {
     }
     .mentorshipCube{
         width:100%;
+        display: flex;
         position:relative;
         font-size: 3em;
         text-align: center;
@@ -195,7 +197,7 @@ cube {
         position:absolute;
         width:400px;
         height:80px;
-        font-size:74px;
+        font: size 3rem;;
         font-weight:700;
         }
     .cubespinner .face1{
@@ -308,7 +310,7 @@ cube {
     max-width: 100%;
 }
 .container img {
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     height: 100vh;
     object-fit: cover;
