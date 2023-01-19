@@ -10,57 +10,57 @@
     <script defer src="2app.js"></script>
 </head>
 <body>
-        <style>
-        body {
-          padding: 25px;
-          background-color: black;
-          color: white;
-          font-size: 25px;
-          transition:2s;  
-
-        }
-        
-          body.dark-mode .srbutton {
-          background:#60f;
-          box-shadow:0 15px 15px #6600ff25;
-          color:white;
-          }  
-        
-        .srbutton {
-          margin: 10px 0 0;
-          background:#0f9;
-          color:black;  
-          border:none;
-          border-radius:100px;
-          padding:16px 24px;
-          outline:none;
-          font-weight:bold;
-          font-size:24px;
-          }    
-          
-        .dark-mode {
-        transition:2s;
-          background-color: white;
-          color: black;
-        }
-        </style>
-        <body>
-        
-        <h2>.projects()</h2>
-        <h2>.resume()</h2>
-        <h2>.play()</h2>
-        
-        <button class="srbutton" onclick="myFunction()">Toggle Light/Dark Mode</button>
-        
-        <script>
-        function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-        }
-        </script>
-        
-        </body>
+  <div class="header" style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px;
+    padding: 10px;">
+    <div class="left-section" style="text-align: right;">        
+        <a href="notreadyyet" class="projects">.projects()</a>
     </div>
+    <div class="middle-section" style="text-align: center;">    
+      <a href="notreadyyet" class="resume">.resume()</a>
+    </div>    
+    <div class="right-section">
+        <a href="notreadyyet" class="play">.play()</a>
+    </div>
+  </div>
+
+  <div class="after-header" style="
+    display: grid;
+    text-align: center;
+    margin: 0px;">
+    <div>
+      <button class="srbutton" onclick="myFunction()">
+        Toggle Light/Dark Mode</button>
+        <script>
+          function myFunction() {
+             var element = document.body;
+             element.classList.toggle("dark-mode");
+          }
+        </script>
+    </div>
+    <div class="hidden">
+      <h1>Hi there! I'm Michelle, <br>a retired operating room nurse and</h1>
+      <h1 class="rainbow rainbow_text_animated">aspiring software developer.</h1>
+    </div>
+    <div class="hidden" style="min-height: 0px;">
+      <h2>Curious and observant by nature,</h2>
+    </div> 
+    <div class="canvas_wrapper">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="hidden">
+        <h2>I’m looking for full-time work <br>as a junior software engineer,</h2>
+    </div>
+
+    <div class="hidden">
+        <h2>specifically seeking</h2>
+    </div>
+
+
+  </div>
 
 </body>
 </html>

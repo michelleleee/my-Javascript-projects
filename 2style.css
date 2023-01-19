@@ -1,1 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+
+header {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 25px;
+  background-color: black;
+  color: white;
+  font-size: 1.75rem;
+  transition:2s;  
+}
+
+h1, h2 {
+  font-size:4rem;
+  margin: 0px;
+}
+
+/*Toggle Dark Mode*/
+.dark-mode .srbutton {
+  background:#60f;
+  color:white;
+  }  
+.srbutton {
+  margin: 10px 0 0;
+  background:#0f9;
+  color:black;  
+  border:none;
+  border-radius:100px;
+  padding:16px 24px;
+  outline:none;
+  font-weight:bold;
+  font-size:24px;
+  cursor: pointer;
+  }    
+.dark-mode {
+  transition:2s;
+  background-color: white;
+  color: black;
+}
+
+/*main text transitions*/
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  min-height: 70vh;
+  padding-top: 20%;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+/*aspiring software developer in rainbow*/
+.rainbow {
+  margin-top: 0px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+
