@@ -88,14 +88,17 @@ h1, h2 {
 
 .rotating-text {
   font-size:4rem;
+  font-weight: 600;
   margin: 0px;
-  color: white;
-  transform: translateX(-80px);
+  min-height: 10vh;
+  padding-top: 0px;
 }
 .rotating-text p {
   display: inline-flex;
   margin: 0;
   vertical-align: top;
+  justify-content: center;
+  
 }
 .rotating-text p .word {
   position: absolute;
@@ -107,28 +110,23 @@ h1, h2 {
 }
 .rotating-text p .word .letter.out {
   transform: rotateX(90deg);
-  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  transition: 0.6s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 .rotating-text p .word .letter.in {
-  transition: 0.38s ease;
+  transition: 0.6s ease;
 }
 .rotating-text p .word .letter.behind {
   transform: rotateX(-90deg);
 }
-
 .alizarin {
   color: #e74c3c;
 }
-
 .wisteria {
   color: #8e44ad;
 }
-
 .peter-river {
   color: #3498db;
 }
-
 .emerald {
   color: #2ecc71;
-
 }
