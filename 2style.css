@@ -10,7 +10,7 @@ header {
 
 body {
   margin: 0;
-  padding: 25px;
+  padding-top: 20px;
   background-color: black;
   color: white;
   font-size: 1.75rem;
@@ -51,8 +51,8 @@ h1, h2 {
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
-  min-height: 70vh;
-  padding-top: 20%;
+  min-height: 60vh;
+  padding-top: 15%;
 }
 .show {
   opacity: 1;
@@ -98,7 +98,6 @@ h1, h2 {
   margin: 0;
   vertical-align: top;
   justify-content: center;
-  
 }
 .rotating-text p .word {
   position: absolute;
@@ -130,3 +129,60 @@ h1, h2 {
 .emerald {
   color: #2ecc71;
 }
+
+
+
+/* Books AKA image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 15%;
+  padding: 5px;
+  margin-left: 50px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+
+}
+/* Clear floats after image containers */
+.row::after {
+  content:"";
+  clear: both;
+}
+.column {
+  padding: 10px;
+  width: 100%;
+  max-width: 175px;
+  will-change: transform;
+  transform-origin: 0 100%;
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease-out;
+}
+.column:hover {
+  transform: rotate(0);
+}
+
+
+
+
+/*parallax*/
+.container {
+  height: 100vh;
+  max-width: 100%;
+}
+.container img {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+}
+.nextContent {
+  width: 100%;
+  min-height: 10vh;
+  z-index: 2;
+}
+
