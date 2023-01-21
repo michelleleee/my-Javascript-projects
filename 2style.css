@@ -170,19 +170,29 @@ h1, h2 {
 
 
 /*parallax*/
+
 .container {
   height: 100vh;
-  max-width: 100%;
 }
 .container img {
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
-}
-.nextContent {
-  width: 100%;
-  min-height: 10vh;
-  z-index: 2;
+  z-index: -1;
 }
 
+.content {
+  width: 100%;
+  background: rgb(24, 24, 24);
+  min-height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+.content-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+}
