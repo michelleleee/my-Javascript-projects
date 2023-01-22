@@ -4,17 +4,22 @@
 
 header {
   margin: 0;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: antiquewhite;
 }
 
 body {
   margin: 0;
   padding-top: 20px;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: antiquewhite;
   font-size: 1.75rem;
   transition:2s;  
+}
+
+a {
+  color: #60f;
+  text-decoration: none;
 }
 
 h1, h2 {
@@ -184,7 +189,7 @@ h1, h2 {
 
 .content {
   width: 100%;
-  background: rgb(24, 24, 24);
+  background: #121212;
   min-height: 100vh;
   z-index: 2;
   position: absolute;
