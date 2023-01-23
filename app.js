@@ -1,4 +1,5 @@
-/* First edits from Beyond Fireship video on text transition animations */
+
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -12,7 +13,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
-
 
 
 /* The fractal tree */
@@ -271,7 +271,51 @@ function Gradient(stop1_hex, stop2_hex, num){
 var fractalTree = new FractalTree('canvas');
 
 
-/* Parallax */
+
+/*Rotating text*/
+"use strict";
+let words = document.querySelectorAll(".word");
+words.forEach(word => {
+    let letters = word.textContent.split("");
+    word.textContent = "";
+    letters.forEach(letter => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
+    });
+});
+let currentWordIndex = 0;
+let maxWordIndex = words.length - 1;
+words[currentWordIndex].style.opacity = "1";
+let rotateText = () => {
+    let currentWord = words[currentWordIndex];
+    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+    // rotate out letters of current word
+    Array.from(currentWord.children).forEach((letter, i) => {
+        setTimeout(() => {
+            letter.className = "letter out";
+        }, i * 80);
+    });
+    // reveal and rotate in letters of next word
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach((letter, i) => {
+        letter.className = "letter behind";
+        setTimeout(() => {
+            letter.className = "letter in";
+        }, 340 + i * 80);
+    });
+    currentWordIndex =
+        currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+};
+rotateText();
+setInterval(rotateText, 2000);
+/*end of rotating text*/
+
+
+
+
+/* Parallax
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
@@ -283,8 +327,8 @@ timeline
     .to('.covid1', 6, {y: 10}, '-=4')
     .to('.covid2', 6, {y: 10}, '-=4');
 
-/*this should be active per youtube video https://www.youtube.com/watch?v=Nt70Ld0dJCM
-but it prevents any animation.*/
+this should be active per youtube video https://www.youtube.com/watch?v=Nt70Ld0dJCM
+but it prevents any animation.
 
 let scene = new ScrollMagic.Scene({
     triggerElement: "nextContent",
@@ -293,4 +337,28 @@ let scene = new ScrollMagic.Scene({
 })
     .setTween(timeline)
     .setPin("nextContent")
-    .addTo(controller)
+    .addTo(controller) */
+
+/*Parallax*/
+let controller = new ScrollMagic.Controller();
+let timeline = new TimelineMax();
+
+timeline
+  .to(".covid1", 15, { y: -100 })  
+  .to(".covid2", 10, { y: -100 })
+  .to(".TB1", 15, { y: -100 })
+  .to(".TB2", 20, { y: -100 })
+  .to(".nurse", 50, { y: -95 }, "-=50")
+  .fromTo(".OR", { y: -50 }, { y: 0, duration: 10 }, "-=10")
+  .to(".content", 10, { top: "10%" }, "-=10")
+  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 2 })
+  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 2 });
+
+let scene = new ScrollMagic.Scene({
+  triggerElement: "section",
+  duration: "400%",
+  triggerHook: 0,
+})
+  .setTween(timeline)
+  .setPin("section")
+  .addTo(controller);
