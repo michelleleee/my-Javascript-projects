@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+
+    font-weight: 100;
+}
+.header {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #60f;
+}
+
+body {
+    margin: 0;
+    padding-top: 20px;
+    background-color: #121212;
+    color:antiquewhite;
+    font-size: 1.75rem;
+    transition: 2s;
+}

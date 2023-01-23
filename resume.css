@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+
+    font-weight: 100;
+}
+.header {
+    margin: 0;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+.toggle {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    padding-top: 20px;
+    background-color: #121212;
+    color:antiquewhite;
+    font-size: 1.75rem;
+    transition: 2s;
+}
+
+
+/*Toggle Dark Mode*/
+.dark-mode .srbutton {
+    background: #60f;
+    color: white;
+}
+
+.srbutton {
+    margin: 10px 0 0;
+    background: #0f9;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 16px 24px;
+    outline: none;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.dark-mode {
+    transition: 2s;
+    background-color: white;
+    color: black;
+}
+
+.first {
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding:0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding:0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;}
+
+.fourth {
+    margin-left: 6%;
+    margin-right: 6%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.second p {
+    font-size: 1.4rem;
+}
+.third p {
+    font-size: 1.4rem;
+}
+
+h2 {
+    margin: 5px 0px 15px;
+}
+h3 {
+    margin: 15px 0px 15px;
+}
+.fourth h4 {
+    margin: 5px 0 10px;
+}
+.fourth p {
+    margin-bottom: 70px;
+}
+a {
+    text-decoration: none;
+    color: #60f;
+}
+.about {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 10%;
+}

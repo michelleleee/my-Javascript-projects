@@ -1,56 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+.site-header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    column-gap: 100px;}
+.play {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.resume {
+    color: white;
+    font-family: 'Poppins', sans-serif;}
+.projects {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
 body {
     background-color: #131316;
     color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0;
-    margin-top: 140;
     text-align: center;
 }
 
-header {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10%;
-    box-shadow: 0 0 25px 0 black;
-}
-header * {
-    display: inline;
-}
-header li {
-    margin: 50px;
-}
-header li a {
-    color: white;
-    text-decoration: none;
-}
-
-section { /*main text transitions from the left*/
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 10vh;
-}
-
+/*main text transitions from the left. Source of multiple spacing problems*/
 .hidden {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 70vh;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.surgery {
+    display: flex;
+    place-items: center;
+    align-content: center;
+    min-height: 70vh;
 }
 
 .logos {
@@ -86,7 +86,6 @@ section { /*main text transitions from the left*/
 /*aspiring software developer in rainbow*/
 .rainbow {
     text-align: center;
-    text-decoration: underline;
     font-family: 'Poppins', sans-serif;
     margin-top: -5%;
 }
@@ -127,9 +126,8 @@ section { /*main text transitions from the left*/
   }
   /* Clear floats after image containers */
   .row::after {
-    content: "";
+    content:"";
     clear: both;
-    display: table;
   }
 .column {
 	padding: 10px;
@@ -144,7 +142,9 @@ section { /*main text transitions from the left*/
     transform: rotate(0);
 }
 
-
+html {
+    width: 100%;
+}
 /*Mentorship rotating cube animation*/
 cube {
     align-content: center;
@@ -152,34 +152,21 @@ cube {
     body{
         margin: auto;
         padding:0px;
-        font-family: Poppins, sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-align: center;
     }
 
     a:hover,a:active{
         text-decoration:none;
     }
-    .home{
+    .mentorshipCube{
         width:100%;
-        align-content: center;
-    }
-    .home:before{
-        content: ' ';
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.9);
-        align-content: center;
-    }
-    .home h3{
+        display: flex;
         position:relative;
         font-size: 3em;
         text-align: center;
-        color:#009393;
         font-weight:700;
-        align-content: center;
+        align-content: center !important;
     }
 
     .stage{
@@ -210,10 +197,7 @@ cube {
         position:absolute;
         width:400px;
         height:80px;
-        text-align:left;
-        color:#109393;
-        font-family:'Raleway', sans-serif;
-        font-size:74px;
+        font: size 3rem;;
         font-weight:700;
         }
     .cubespinner .face1{
@@ -326,7 +310,7 @@ cube {
     max-width: 100%;
 }
 .container img {
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     height: 100vh;
     object-fit: cover;

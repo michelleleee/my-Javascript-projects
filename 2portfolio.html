@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle O Junior Dev</title>
+
+    <link rel="stylesheet" href="2style.css">
+    <script defer src="2app.js"></script>
+</head>
+
+<body>
+    <div class="header" style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0px;
+        padding: 10px;">
+        <div class="left-section" style="text-align: right;">
+            <a href="/projects.html" class="projects">.projects()</a>
+        </div>
+        <div class="middle-section" style="text-align: center;">
+            <a href="/resume.html" class="resume">.resume()</a>
+        </div>
+        <div class="right-section">
+            <a href="/play.html" class="play">.play()</a>
+        </div>
+    </div>
+
+    <div class="after-header" style="
+        display: grid;
+        text-align: center;
+        margin: 0px;">
+        <div>
+            <button class="srbutton" onclick="myFunction()">
+                Toggle Light/Dark Mode</button>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+        </div>
+        <div class="hidden">
+            <h1>Hi there! I'm Michelle, <br>a retired operating room nurse and</h1>
+            <h1 class="rainbow rainbow_text_animated">aspiring software developer.</h1>
+        </div>
+        <div class="hidden" style="min-height: 0px;">
+            <h2>Curious and observant by nature,</h2>
+        </div>
+        <div class="canvas_wrapper">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="hidden">
+            <h2>I’m looking for full-time work <br>as a junior software engineer,</h2>
+        </div>
+
+        <div class="hidden" style="min-height: 0px;">
+            <h2>specifically seeking</h2>
+        </div>
+
+
+        <div class="rotating-text hidden show" style="padding-bottom: 13%;">
+            <p>
+                <span class="word alizarin">mentorship</span>
+                <span class="word wisteria">empowerment</span>
+                <span class="word peter-river">coaching</span>
+                <span class="word emerald">guidance</span>
+            </p>
+        </div>
+
+
+        <div class="hidden" style="min-height: 15vh;">
+            <h1>What I've studied:</h1>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="images/machinelearning.jpg" alt="Mathematics for Machine Learning book cover"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/python.jpg" alt="OOP Python book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/databases.jpg" alt="Databases book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/devops.jpg" alt="The DevOps Handbook book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/git.jpg" alt="Git and Github book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/javascript.jpg" alt="Javascript book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/phoenixproject.jpg" alt="The Phoenix Project book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/VSCode.jpg" alt="VSCode book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/python3.jpg" alt="Python book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/UX.jpg" alt="User Story Mapping book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/leadership.jpg" alt="She's Meant To Lead book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/microbio.webp" alt="Microbiology book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/redqueen.webp" alt="The Red Queen book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/flatland-web-developer.jpg" alt="Flatland book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/microserfs-junior-software-engineer.webp" alt="Microserfs book cover"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/linguistics.jpg" alt="Linguistics book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/readyplayerone.jpg" alt="Ready Player One book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/stats.jpg" alt="Statistics book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/michaelpollan.jpg" alt="How to Change Your Mind book cover" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/BetterAngels.jpg" alt="The Better Angels of our Nature book cover" style="width:100%">
+            </div>
+        </div>
+
+        <div class="hidden">
+            <h2>Originally from the northeast, <br>my home base is Austin, TX</h2><br>
+        </div>
+        <div class="hidden">
+            <img src="images/rutgers-university.jpg" alt="Rutgers University logo" style="width: 400px;
+        padding-bottom: 3%;">
+            <h2>I’ve got a BS degree in Nursing <br>and was an operating room nurse for 8 years...</h2>
+        </div>
+    </div>
+
+    <div>
+        <section>
+            <div class="container">
+                <img src="images/Weary_OR.png" class="OR" alt="operating room art" />
+                <img src="images/Weary_Nurse.png" class="nurse" alt="weary nurse art"
+                    style="height: auto !important;" />
+                <img src="images/TB_Molecules1.png" class="TB1" alt="tuberculosis bacteria" />
+                <img src="images/TB_Molecules2.png" class="TB2" alt="tuberculosis bacteria" />
+                <img src="images/Covid_Molecule.png" class="covid1" alt="covid virus" />
+                <img src="images/Covid_Molecule_Blurry.png" class="covid2" alt="covid virus" />
+            </div>
+            <div class="content">
+
+                <div class="content-images hidden">
+
+                </div>
+                <div class="hidden2" style="margin-top: 25%;">
+                    <h2>It was a tough job but I learned some key skills:</h2>
+                </div>
+                <div class="hidden2">
+                    <h3>How to communicate <FONT COLOR="RED">critical things...</FONT> <br>even to people who are
+                        intimidating (like a brain surgeon in the middle of a tricky operation).</h3>
+                </div>
+                <div class="hidden2">
+                    <h3>Intense team dynamics: <br>I worked with <font color=#5DC4FF>4-10 different people </font>every
+                        hour,
+                        every day, often with strong personalities. </h3>
+                </div>
+                <div class="hidden2">
+                    <h3>I can learn <font color=#807EFE>complex technical skills</font> that I don't even particularly
+                        like -
+                        and still master them. </h3>
+                </div>
+                <div class="hidden2">
+                    <h3>Forward-thinking and process improvement are important! <br>
+                        Computers are tools to help humans live better.</h3>
+                </div><!--Simple CSS Waves-->
+                <div class="header">
+
+                    <!--Content before waves-->
+                    <div class="inner-header flex">
+                    </div>
+                    <!--Waves Container-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave"
+                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" fill="#E97EFE" />
+                                <use xlink:href="#gentle-wave" x="48" y="3" fill="#8CFFEC" />
+                                <use xlink:href="#gentle-wave" x="48" y="5" fill="#807EFE" />
+                                <use xlink:href="#gentle-wave" x="48" y="7" fill="#5DC4FF" />
+                            </g>
+                        </svg>
+                    </div>
+                    <!--Waves end-->
+                </div>
+                <!--Waves end-->
+
+                <section class="hidden2">
+                    <h3>Tech interests: <br>UI/UX, GPT, MidJourney AI Art, cybersecurity </h3>
+                </section>
+
+                <section class="hidden2">
+                    <h3>My ultimate goal: <br>Work for a B-Corp or a company/start-up doing Earth-affirming things.</h3>
+                </section>
+
+                <section class="hidden2">
+                    <h2>I want to put my knowledge to work and have a direction for further learning. What framework
+                        should I tackle next? Bring me into your organization and show me the problems you solve,
+                        I'd love to contribute.
+                    </h2><br>
+                    <h1>Take a look at my <a href="/resume.html" class="resume">.resume()</a><br>or contact me on
+                        <a href="https://www.linkedin.com/in/michelleogorzal/">LinkedIn</a>
+                    </h1>
+                </section>
+
+
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+            integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+        <script src="./2app.js"></script>
+    </div>
+
+</body>
+
+</html>
