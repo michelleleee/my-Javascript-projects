@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
 
-
-
-header {
+.header {
   margin: 0;
-  background-color: #121212;
-  color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(105, 62, 248);
 }
 
 body {
@@ -16,11 +21,6 @@ body {
   font-size: 1.75rem;
   font-weight: 100;
   transition:2s;  
-}
-
-a {
-  color: #60f;
-  text-decoration: none;
 }
 
 h1, h2 {
