@@ -351,8 +351,8 @@ timeline
   .to(".nurse", 50, { y: -95 }, "-=50")
   .fromTo(".OR", { y: -50 }, { y: 0, duration: 10 }, "-=10")
   .to(".content", 10, { top: "10%" }, "-=10")
-  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
+  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 2 })
+  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 2 });
 
 let scene = new ScrollMagic.Scene({
   triggerElement: "section",
