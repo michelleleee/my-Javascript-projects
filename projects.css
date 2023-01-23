@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
 
 * {
-
     font-weight: 100;
 }
 .header {
@@ -64,7 +63,6 @@ img {
 .first {
     margin-left: 6%;
     margin-right: 6%;
-    margin-bottom: 6%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -82,7 +80,7 @@ img {
 .second {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 6%;
+    margin: 0px 6% 0px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     align-items: center;
@@ -104,8 +102,13 @@ img {
 }
 
 h2 {
-    margin: 5px 0px 15px;
+    margin: 10% 0px 15px;
 }
 h3 {
     margin: 15px 0px 15px;
+}
+
+p{
+    font-size: 1.5rem;
+    padding-right: 3%
 }
